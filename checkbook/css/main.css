@@ -1,0 +1,38 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.bodyContainer {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.tomCheckbookFormButton{
+    margin-top: 15px;
+}
+
+.tomCheckBookFormInput{
+    width: 100%;
+}
+
+#deleteAll{
+    /*background-color: InfoBackground;*/
+}
+
+#updateCurrentTotalButton,
+#containerButton{
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
