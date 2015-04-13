@@ -4,6 +4,15 @@
  */
 
 var db = new PouchDB('checkbook');
+var remoteCouch = 'http://tspaulding:Dude8445@ts.iriscouch.com/checkbook';
+
+//Sync to couchDB
+function sync(){
+    syncSuccess();
+    var opts = {live: true};
+    db.replicate.to(remoteCouch, opts, syncError);
+    db.replicate.from(remoteCouch, opts, syncError);
+}
 
 //Add or Create new Item in DB
 function addTransaction(location, amount){
@@ -18,9 +27,12 @@ function addTransaction(location, amount){
                 var obj = {};
                 obj.doc = transaction;
                 resolve(obj);
+                pouchSuccess();
+                sync();
             }
             else{
                 reject();
+                pouchError();
             }
         });
     });
@@ -42,6 +54,8 @@ function deleteDatabase(){
         db.destroy().then(function(){
             db = new PouchDB('checkbook');
             resolve();
+            pouchSuccess();
+            sync();
         });
     });
 }
@@ -61,6 +75,8 @@ function deleteItem(_id){
         getItem(_id).then(function(item){
             db.remove(item).then(function(){
                 resolve();
+                pouchSuccess();
+                sync();
             });
         })
     });
@@ -82,9 +98,12 @@ function submitTotal(total){
                     var obj = {};
                     obj.doc = transaction;
                     resolve(obj);
+                    pouchSuccess();
+                    sync();
                 }
                 else{
                     reject();
+                    pouchError();
                 }
             });
         }).catch(function(){
@@ -105,9 +124,12 @@ function submitTotal(total){
                     var obj = {};
                     obj.doc = transaction;
                     resolve();
+                    pouchSuccess();
+                    sync();
                 }
                 else{
                     reject();
+                    pouchError();
                 }
             });
         });

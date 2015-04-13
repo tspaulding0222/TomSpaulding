@@ -1,5 +1,10 @@
 //Typical document.ready function
 $(document).ready(function(){
+    //If the remote couch exists. Then begin syncing
+    if(remoteCouch){
+        sync();
+    }
+
     createTable();
     initializeCheckbook();
 
@@ -123,6 +128,37 @@ function calculateAvailable(){
         });
         $(document.getElementById("currentAvailable")).val(currentTotal);
     });
+}
+
+var syncDom = document.getElementById("sync-wrapper");
+var pouchDom = document.getElementById("db-wrapper");
+
+function syncError(){
+    syncDom.innerHTML = "Sync Error";
+    window.setTimeout(function(){
+        syncDom.innerHTML = "";
+    }, 1000);
+}
+
+function syncSuccess(){
+    syncDom.innerHTML = "Sync Success";
+    window.setTimeout(function(){
+        syncDom.innerHTML = "";
+    }, 1000);
+}
+
+function pouchSuccess(){
+    pouchDom.innerHTML = "Saved to Checkbook";
+    window.setTimeout(function(){
+        pouchDom.innerHTML = "";
+    }, 1000);
+}
+
+function pouchError(){
+    pouchDom.innerHTML = "Checkbook Error";
+    window.setTimeout(function(){
+        pouchDom.innerHTML = "";
+    }, 1000);
 }
 
 

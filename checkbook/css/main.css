@@ -26,6 +26,16 @@
     margin-top: 5px;
 }
 
+#sync-wrapper{
+    border: 1px solid black;
+    color: blue;
+}
+
+#db-wrapper{
+    border: 1px solid black;
+    color: darkgreen;
+}
+
 
 
 

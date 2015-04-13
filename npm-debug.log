@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'add-cors-to-couchdb' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'add-cors-to-couchdb', null ]
+5 verbose cache add name=undefined spec="add-cors-to-couchdb" args=["add-cors-to-couchdb",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'add-cors-to-couchdb',
+6 verbose parsed url   path: 'add-cors-to-couchdb',
+6 verbose parsed url   href: 'add-cors-to-couchdb' }
+7 silly lockFile e037096b-add-cors-to-couchdb add-cors-to-couchdb
+8 verbose lock add-cors-to-couchdb /Users/tom.spaulding/.npm/e037096b-add-cors-to-couchdb.lock
+9 silly lockFile e037096b-add-cors-to-couchdb add-cors-to-couchdb
+10 silly lockFile e037096b-add-cors-to-couchdb add-cors-to-couchdb
+11 verbose addNamed [ 'add-cors-to-couchdb', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 60a3e4d7-add-cors-to-couchdb add-cors-to-couchdb@
+14 verbose lock add-cors-to-couchdb@ /Users/tom.spaulding/.npm/60a3e4d7-add-cors-to-couchdb.lock
+15 silly addNameRange { name: 'add-cors-to-couchdb', range: '*', hasData: false }
+16 verbose request where is /add-cors-to-couchdb
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 34ddb6f42fbc17d2
+19 verbose url raw /add-cors-to-couchdb
+20 verbose url resolving [ 'https://registry.npmjs.org/', './add-cors-to-couchdb' ]
+21 verbose url resolved https://registry.npmjs.org/add-cors-to-couchdb
+22 verbose request where is https://registry.npmjs.org/add-cors-to-couchdb
+23 info trying registry request attempt 1 at 11:16:32
+24 http GET https://registry.npmjs.org/add-cors-to-couchdb
+25 http 200 https://registry.npmjs.org/add-cors-to-couchdb
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Mon, 13 Apr 2015 15:16:33 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"2U7IO9YUDK2WKWZ53NWGX5CUA"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '6375',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-ord1725-ORD',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1428938193.210121,VS0,VE276',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'add-cors-to-couchdb', range: '*', hasData: true }
+28 silly addNameRange versions [ 'add-cors-to-couchdb',
+28 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4' ] ]
+29 verbose addNamed [ 'add-cors-to-couchdb', '0.0.4' ]
+30 verbose addNamed [ '0.0.4', '0.0.4' ]
+31 silly lockFile c2265947-add-cors-to-couchdb-0-0-4 add-cors-to-couchdb@0.0.4
+32 verbose lock add-cors-to-couchdb@0.0.4 /Users/tom.spaulding/.npm/c2265947-add-cors-to-couchdb-0-0-4.lock
+33 silly lockFile 2e323ce1-db-add-cors-to-couchdb-0-0-4-tgz https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+34 verbose lock https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz /Users/tom.spaulding/.npm/2e323ce1-db-add-cors-to-couchdb-0-0-4-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz',
+35 verbose addRemoteTarball   '92f2841dabd89872994e709eb5217fd81367e44b' ]
+36 info retry fetch attempt 1 at 11:16:33
+37 verbose fetch to= /var/folders/58/zsk_td351td8yswptnt069h4n3z69b/T/npm-3348-g9VOU9Kd/registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+38 http GET https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+39 http 200 https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+40 silly lockFile 2e323ce1-db-add-cors-to-couchdb-0-0-4-tgz https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+41 silly lockFile 2e323ce1-db-add-cors-to-couchdb-0-0-4-tgz https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz
+42 silly lockFile c2265947-add-cors-to-couchdb-0-0-4 add-cors-to-couchdb@0.0.4
+43 silly lockFile c2265947-add-cors-to-couchdb-0-0-4 add-cors-to-couchdb@0.0.4
+44 silly lockFile 60a3e4d7-add-cors-to-couchdb add-cors-to-couchdb@
+45 silly lockFile 60a3e4d7-add-cors-to-couchdb add-cors-to-couchdb@
+46 silly resolved [ { name: 'add-cors-to-couchdb',
+46 silly resolved     version: '0.0.4',
+46 silly resolved     description: 'add CORS to couchdb',
+46 silly resolved     main: 'index.js',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/pouchdb/add-cors-to-couchdb.git' },
+46 silly resolved     keywords: [ 'cors', 'couchdb', 'pouchdb' ],
+46 silly resolved     author: { name: 'Calvin W. Metcalf' },
+46 silly resolved     license: 'Apache',
+46 silly resolved     bugs: { url: 'https://github.com/pouchdb/add-cors-to-couchdb/issues' },
+46 silly resolved     homepage: 'https://github.com/pouchdb/add-cors-to-couchdb',
+46 silly resolved     dependencies: { yargs: '^1.3.1' },
+46 silly resolved     bin: { 'add-cors-to-couchdb': './bin.js' },
+46 silly resolved     gitHead: 'a8a99638e185bfe6fd803d7416eb52afcb11e733',
+46 silly resolved     _id: 'add-cors-to-couchdb@0.0.4',
+46 silly resolved     scripts: {},
+46 silly resolved     _shasum: '92f2841dabd89872994e709eb5217fd81367e44b',
+46 silly resolved     _from: 'add-cors-to-couchdb@',
+46 silly resolved     _npmVersion: '2.2.0',
+46 silly resolved     _nodeVersion: '0.10.28',
+46 silly resolved     _npmUser: { name: 'nolanlawson', email: 'nolan@nolanlawson.com' },
+46 silly resolved     maintainers: [ [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '92f2841dabd89872994e709eb5217fd81367e44b',
+46 silly resolved        tarball: 'http://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/add-cors-to-couchdb/-/add-cors-to-couchdb-0.0.4.tgz' } ]
+47 info install add-cors-to-couchdb@0.0.4 into /usr/local/lib
+48 info installOne add-cors-to-couchdb@0.0.4
+49 verbose lib/node_modules/add-cors-to-couchdb unbuild
+50 verbose tar unpack /Users/tom.spaulding/.npm/add-cors-to-couchdb/0.0.4/package.tgz
+51 silly lockFile 2d9154d3-node-modules-add-cors-to-couchdb tar:///usr/local/lib/node_modules/add-cors-to-couchdb
+52 verbose lock tar:///usr/local/lib/node_modules/add-cors-to-couchdb /Users/tom.spaulding/.npm/2d9154d3-node-modules-add-cors-to-couchdb.lock
+53 silly lockFile b3c8841e-ors-to-couchdb-0-0-4-package-tgz tar:///Users/tom.spaulding/.npm/add-cors-to-couchdb/0.0.4/package.tgz
+54 verbose lock tar:///Users/tom.spaulding/.npm/add-cors-to-couchdb/0.0.4/package.tgz /Users/tom.spaulding/.npm/b3c8841e-ors-to-couchdb-0-0-4-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/add-cors-to-couchdb'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/add-cors-to-couchdb']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/add-cors-to-couchdb',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/add-cors-to-couchdb',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.1.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "add-cors-to-couchdb"
+60 error cwd /Users/tom.spaulding/Development/TomSpaulding.co.nf
+61 error node -v v0.10.35
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/add-cors-to-couchdb
+64 error fstream_path /usr/local/lib/node_modules/add-cors-to-couchdb
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/add-cors-to-couchdb'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
