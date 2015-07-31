@@ -1,0 +1,8 @@
+.not-bulleted-list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.not-bulleted-list li{
+    padding: 0;
+}
